@@ -1,0 +1,655 @@
+/*
+Theme Name: 
+Theme URL: http://
+Author: Agencia Mixen
+Author URL: http://mixen.mx/
+Description: Tema para el sitio de .
+Version: 1.0
+Text Domain: Mixen Communication & Web Technology
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+@font-face {
+	font-family: BigNoodleTitling;
+	src: url(../fonts/big_noodle_titling.ttf);
+}
+
+/* BEGIN GENERAL STYLES */
+body {
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	margin-top: 100px;
+}
+
+.spacing {
+	padding: 100px 10px;
+}
+
+.light-spacing {
+	padding: 25px 10px;
+}
+
+.transform-center-vertical, .transform-center-vertical-banner {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.transform-center-vertical-banner {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.header {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+
+.white {
+	color: #fff;
+}
+
+.blue {
+	color: #015c7d;
+}
+
+.green {
+	color: #669966;
+}
+
+.red {
+	color: #cf3c21;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400px;
+}
+
+.border-left {
+	border-left: 1px solid #005b7c;
+}
+
+.border-right-green {
+	border-right: 1px solid #669966;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.light-padding-bottom {
+	padding-bottom: 50px;
+}
+
+.light-padding-top {
+	padding-top: 50px;
+}
+
+.no-margin {
+	margin: 0;
+}
+/* END GENERAL STYLES */
+
+/* BEGIN NAVBAR */
+.navbar-default {
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.81);
+	border-bottom: 3px solid #000;
+	border: none;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.navbar-brand {
+	margin-top: 0px;
+	padding-top: 0;
+}
+
+.navbar-brand img {
+	margin: 3px 0;
+	max-height: 94px;
+}
+
+.navbar-nav {
+	margin-top: 30px;
+}
+
+.navbar-nav a {
+	color: #000 !important;
+	font-size: 14px;
+	font-weight: 500;
+	height: 38px;
+}
+
+.navbar-collapse a:hover {
+	border-bottom: 1px solid #669966;
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+	background-color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.navbar .contact-info {
+	font-size: 16.14px;
+	color: #000;
+	display: inline-block;
+	margin-top: 10px;
+	height: 30px;
+	line-height: 30px;
+	float: right;
+}
+
+.navbar .contact-info li {
+	display: inline-block;
+}
+
+.navbar .contact-info li:nth-child(1) {
+	margin-right: 12px;
+}
+
+.navbar .contact-info .border-left img {
+	margin-left: 12px;
+}
+
+.navbar .contact-info h3 {
+	font-size: 15px;
+	font-weight: 800;
+	display: inline-block;
+	margin: 0;
+}
+
+.navbar .contact-info a:hover {
+	text-decoration: none;
+}
+/* END NAVBAR */
+
+/* BEGIN CAROUSEL */
+.inicio .carousel, .inicio .carousel-inner, .inicio .item {
+	max-height: 100vh;
+}
+
+.inicio .carousel-inner img {
+	width: 100%;
+}
+
+.inicio .carousel-caption h2:first-line {
+	font-size: 84px;
+}
+
+.inicio .carousel-caption h2 {
+	font-size: 56px;
+}
+
+.inicio .carousel-caption {
+	font-family: BigNoodleTitling;	
+	max-height: 86px;
+	max-width: 1170px;
+	display: inline-table;
+	margin: 0 auto;
+	padding: 0;
+	/* IE COMPATIBILITY */
+	width: 100%;
+}
+
+.inicio .carousel-indicators li, .inicio .carousel-indicators li.active {
+	border: 1px solid rgba(1, 55, 75, 0.59);
+}
+.inicio .carousel-indicators li.active {
+	background-color: rgba(1, 55, 75, 0.59);
+}
+/* END CAROUSEL */
+
+/* BEGIN SERVICIOS */
+.servicios .container {
+	margin: 100px auto;
+}
+
+.servicios p:nth-child(2) {
+	margin-bottom: 75px;
+}
+
+.servicios p:nth-child(3) {
+	font-size: 14px;
+	line-height: 20px;
+}
+/* END SERVICIOS */
+
+/* CLIENTES */
+.clientes .col-sm-3 {
+	padding: 15px;
+}
+/* CLIENTES */
+
+/* CERTIFICACIONES */
+.certificaciones .col-sm-6:first-child {
+	padding-right: 80px;
+}
+
+.certificaciones .col-sm-6:last-child {
+	padding-left: 80px;
+}
+
+.certificaciones p {
+	text-align-last: center;
+}
+/* CERTIFICACIONES */
+
+/* VENTAJAS COMPETITIVAS */
+.ventajas .col-sm-4 {
+	border: 1px solid #fff;
+	padding: 25px;
+	width: calc(33% - 22px);
+	margin: 12.2px 12.2px;
+	transition: background 500ms ease;
+	min-height: 400px;
+}
+
+.ventajas .col-sm-4:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ventajas .row:nth-child(3) .col-sm-4:nth-child(2) {
+	border: 0;
+	background: none!important;
+}
+
+.ventajas h3 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.ventajas p {
+	font-size: 14px;
+}
+/* VENTAJAS COMPETITIVAS */
+
+/* SERVICIOS POR SECTOR */
+.sector .col-sm-3 {
+	padding: 15px;	
+}
+
+.sector img {
+	margin-bottom: 15px;	
+}
+
+.sector p {
+	line-height: 25px;
+	font-weight: 700;
+}
+/* SERVICIOS POR SECTOR */
+
+/* BEGIN CONTACTO */
+.contacto {
+	background-color: #41844e;
+}
+
+.contacto h3 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.contacto p {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+input[type=text], textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #03496a;
+	min-height: 50px;
+	padding-left: 15px;
+}
+
+input[type=text] {
+	background-position: 98%!important;
+}
+
+input[type=text]:first-child {
+	background: url(../img/icons/name.png) no-repeat;
+}
+
+input[type=text]:nth-child(2) {
+	background: url(../img/icons/address.png) no-repeat;
+}
+
+input[type=text]:nth-child(3) {
+	background: url(../img/icons/location.png) no-repeat;
+}
+
+input[type=text]:nth-child(4) {
+	background: url(../img/icons/telephone.png) no-repeat; 
+}
+
+textarea {
+	background: url(../img/icons/message.png) no-repeat;
+	background-position: 98% 15px;
+}
+
+input[type=text]:focus, textarea:focus {
+	outline: none;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,.3);
+}
+
+textarea {
+	padding-top: 15px;
+}
+
+.contact-form .row {
+	padding: 0;
+	margin: 0;
+}
+
+.contact-form button {
+	border: 0;
+	background-color: #03496a;
+	height: 48px;
+	width: 100px;
+}
+
+.contact-form button:hover {
+	background-color: #03405d;
+}
+
+.contact-form button:focus {
+	outline: none;
+}
+
+.googleMap {
+	height: 746px;
+	width: 100%;
+}
+
+#form-output {
+	margin-top: 30px;
+}
+/* END CONTACTO */
+
+/* BEGIN FOOTER */
+footer {
+	height: 280px;
+	position: relative;
+	background-color: #ccc;
+}
+
+.footer-top {
+	padding-bottom: 45px;
+}
+
+.footer-top img {
+	max-width: 90%;
+	max-height: 150px;
+}
+
+.footer-rights {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.59);
+	font-size: 12px;
+	color: #ffffff;
+	padding-top: 14px;
+	min-height: 45px;
+	font-family: 'Myriad Pro';
+}
+
+.footer-rights a {
+	color: #e3e3e3;
+}
+
+.footer-rights a:hover {
+	color: #c3c3c3;
+	text-decoration: none;
+}
+/* END FOOTER */
+
+/* Parallax CSS */
+.parallax-container {
+	position: relative;
+	overflow: hidden;
+	min-height: 295px;
+	height: auto;
+}
+
+.parallax {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1; 
+}
+
+.parallax img {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	min-width: 1920px;
+	width: 100%;
+	background-position: center;
+}
+
+/* BEGIN MEDIA QUERIES */
+@media (max-width: 1200px) {
+	.navbar-brand {
+		max-width: 200px;
+	}
+	.navbar-brand img {
+		margin-top: 10px;
+		width: 100%;
+	}
+	.carousel h2:first-line {
+		font-size: 70px!important;
+	}
+	.carousel h2 {
+		font-size: 50px!important;
+	}
+	.navbar a {
+		font-size: 11px;
+	}
+	.ventajas .col-sm-4 {
+		min-height: 476px;
+	}
+}
+
+@media (max-width: 991px) {
+	.border-left {
+		border: 0;
+	}
+	.navbar-collapse {
+		width: 74%;
+		float: right;
+	}
+	.navbar .navbar-nav a {
+		font-size: 11px;
+	}
+	.navbar .contact-info {
+		margin-top: -5px;
+		border-left: 1px solid #005b7c;
+		height: 60px;
+		display: none;
+	}
+	.navbar .contact-info h3 {
+		font-size: 10.5px!important;
+	}
+	.navbar .contact-info li {
+		padding-left: 10px;
+		display: block;
+		width: 190px;
+		margin-left: 10px;
+		margin-right: -28px!important;
+	}
+	.navbar .contact-info li:nth-child(2) img, .navbar .contact-info li:nth-child(2) h3 {
+		margin: 0;
+		display: inline-block;
+	}
+	.carousel h2:first-line {
+		font-size: 60px!important;
+	}
+	.carousel h2 {
+		font-size: 40px!important;
+	}
+	.certificaciones .col-sm-6:first-child {
+		padding-right: 40px;
+	}
+	.certificaciones .col-sm-6:last-child {
+		padding-left: 40px;
+	}
+	.ventajas .col-sm-4 {
+		min-height: 634px;
+	}
+	.ventajas .row:nth-child(3) .col-sm-4 {
+		min-height: 420px;
+	}
+}
+
+@media (max-width: 767px) {
+	.wrapper {
+		margin-top: 50px;
+	}
+	.spacing {
+		padding: 50px 20px;
+	}
+	.light-padding-top {
+		padding-top: 25px;
+	}
+	.light-padding-bottom {
+		padding-bottom: 25px;
+	}
+	.header {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.text, p {
+		line-height: 20px;
+		font-size: 15px
+	}
+	.width-padding {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.border-left-gray {
+		border: 0;
+	}
+	.border-right-green {
+		border: 0;
+	}
+	.navbar-default {
+		height: 50px;
+	}
+	.navbar-brand {
+		margin-top: 0;
+	}
+	.navbar-brand img {
+		height: 46px;
+		margin-top: 2px;
+		width: auto;
+	}
+	.navbar-collapse {
+		border: 0;
+	}
+	.navbar-nav, .navbar-nav a {
+		margin: 0;
+		text-align: right;
+	}
+	.navbar-nav {
+		margin-bottom: 10px;
+	}
+	.navbar-collapse {
+		background-color: rgba(255, 255, 255, 0.81);
+		width: 250px;
+		position: absolute;
+		margin: 0!important;
+		right: 0;
+		z-index: 10;
+		height: 260px;
+	}
+	.navbar .contact-info {
+		margin-top: 0px;
+		border-left: 0;
+		display: block;
+	}
+	.navbar .contact-info h3 {
+		font-size: 11px;
+		padding-right: 12px;
+	}
+	.navbar .contact-info li {
+		display: block;
+		width: auto;
+		margin: 0!important
+	}
+	.inicio .carousel-caption h2 {
+		padding: 0 10px;
+		font-size: 30px!important;
+	}
+	.inicio .carousel-caption h2:first-line {
+		font-size: 55px!important;
+	}
+	.servicios .container {
+		margin: 0px;
+	}
+	.servicios h3 {
+		font-size: 20px;
+	}
+	.servicios p:nth-child(3) {
+		line-height: 20px;
+		font-size: 15px;
+		max-width: 300px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.certificaciones .col-sm-6 {
+		padding: 15px!important;
+	}
+	.ventajas .row {
+		margin-top: -12.5px;
+	}
+	.ventajas .col-sm-4 {
+		width: auto;
+		min-height: auto!important;
+	}
+	.clientes p {
+		margin-bottom: -70px;	
+	}
+	.sector .col-sm-3 {
+		padding: 15px;
+	}
+	.googleMap {
+		height: 100vh;
+		max-height: 500px;
+	}
+	.footer-rights p {
+		font-size: 12px!important;
+	}
+}
+@media (max-width: 480px) {
+	.inicio .carousel-caption h2 {
+		padding: 0 10px;
+		font-size: 25px!important;
+	}
+	.inicio .carousel-caption h2:first-line {
+		font-size: 35px!important;
+	}
+	.ventajas .col-sm-4 {
+		padding: 15px;
+	}
+}
