@@ -21,6 +21,24 @@ body {
 	overflow-x: hidden;
 }
 
+a {
+	text-decoration: none!important;
+	outline: none!important;
+}
+/*
+.modal ul {
+	list-style: none;
+}
+.modal li {
+	padding-left: 1em; 
+    text-indent: -1em;
+}
+.modal li:before {
+    content: "• ";
+	font-size: 30px;
+    color: #669966;
+}*/
+
 .wrapper {
 	margin-top: 100px;
 }
@@ -181,6 +199,12 @@ body {
 /* END NAVBAR */
 
 /* BEGIN CAROUSEL */
+.inicio .banner {
+	background: url(../img/banner/mina.jpg) no-repeat center center;
+	background-size: cover;
+	height: calc(100vh - 100px);
+}
+
 .inicio .carousel, .inicio .carousel-inner, .inicio .item {
 	max-height: 100vh;
 }
@@ -219,6 +243,10 @@ body {
 /* BEGIN SERVICIOS */
 .servicios .container {
 	margin: 100px auto;
+	text-shadow: .5px .5px rgba(0,0,0,.5),
+	-.5px -.5px rgba(0,0,0,.5),
+	.5px -.5px rgba(0,0,0,.5),
+	-.5px .5px rgba(0,0,0,.5);
 }
 
 .servicios p:nth-child(2) {
@@ -258,7 +286,7 @@ body {
 	width: calc(33% - 22px);
 	margin: 12.2px 12.2px;
 	transition: background 500ms ease;
-	min-height: 400px;
+	min-height: 436px;
 }
 
 .ventajas .col-sm-4:hover {
@@ -293,6 +321,10 @@ body {
 	line-height: 25px;
 	font-weight: 700;
 }
+
+.sector a {
+	color: inherit!important;
+}
 /* SERVICIOS POR SECTOR */
 
 /* BEGIN CONTACTO */
@@ -306,7 +338,7 @@ body {
 }
 
 .contacto p {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
 }
@@ -382,6 +414,43 @@ textarea {
 	margin-top: 30px;
 }
 /* END CONTACTO */
+
+/* BEGIN MODALES */
+.modal-dialog {
+	/*position: relative;
+	height: 100vh;
+	padding: 0;
+	margin: 0 auto;*/
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%)!important;
+	-moz-transform: translateY(-50%)!important;
+	-ms-transform: translateY(-50%)!important;
+	transform: translateY(-50%)!important;
+}
+
+.modal-dialog img {
+	margin-bottom: 30px;
+}
+
+.modal-dialog .modal-content{
+	border-radius: 0;
+	border: 0;
+	/*background: transparent;
+	box-shadow: none;*/
+}
+
+.modal-dialog .modal-header {
+	border: 0;
+}
+
+.modal-dialog .modal-body {
+	padding: 50px 30px;
+}
+/* END MODALES */
 
 /* BEGIN FOOTER */
 footer {
@@ -466,7 +535,7 @@ footer {
 		font-size: 11px;
 	}
 	.ventajas .col-sm-4 {
-		min-height: 476px;
+		min-height: 496px;
 	}
 }
 
@@ -514,7 +583,7 @@ footer {
 		padding-left: 40px;
 	}
 	.ventajas .col-sm-4 {
-		min-height: 634px;
+		min-height: 673px;
 	}
 	.ventajas .row:nth-child(3) .col-sm-4 {
 		min-height: 420px;
@@ -595,6 +664,9 @@ footer {
 		display: block;
 		width: auto;
 		margin: 0!important
+	}
+	.inicio .banner {
+		height: calc(100vh - 50px);
 	}
 	.inicio .carousel-caption h2 {
 		padding: 0 10px;

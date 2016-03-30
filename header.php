@@ -34,7 +34,7 @@
 						<div class="contact-info">
 							<li>
 								<img src="img/icons/phone.png" alt="Teléfono">
-								<h3>483.0323</h3>
+								<h3>415.1742</h3>
 							</li>
 							<li class="border-left">
 								<img src="img/icons/mail.png" alt="Correo Electrónico">
